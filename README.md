@@ -97,6 +97,14 @@ def get_column_descriptions(dataset_name):
 2. Name them as `{dataset_name}.csv` (e.g., `icustays.csv`)
 3. Add corresponding column descriptions in `config.py`
 
+### Supported Datasets
+
+This implementation has been tested on datasets across finance, healthcare, and logistics domains:
+
+- **Healthcare**: [MIMIC-III](https://mimic.mit.edu/) - Critical care database
+- **Finance**: [UCI Adult Dataset](https://archive.ics.uci.edu/ml/datasets/adult) - Census income data
+- **Logistics**: [Supply Chain Dataset](https://data.mendeley.com/datasets/8gx2fvg2k6/3) - Supply chain management data
+
 ## Usage
 
 ### Basic Usage
