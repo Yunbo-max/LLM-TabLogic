@@ -29,18 +29,6 @@ cd LLM-TabGEO
 pip install -r requirements.txt
 ```
 
-### Required Python Packages
-
-Create a `requirements.txt` file with the following dependencies:
-
-```txt
-pandas>=1.3.0
-requests>=2.25.0
-argparse
-json
-os
-```
-
 ## Project Structure
 
 ```
