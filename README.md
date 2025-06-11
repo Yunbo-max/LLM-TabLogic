@@ -119,8 +119,8 @@ python main.py --data icustays --model deepseek --temp 0.2 --max_tok 1500
 ## Output
 
 The tool generates the following outputs in `results/{dataset_name}/`:
-1. **FilteredOutput.csv**: Dataset after applying LLM-conditional Compressiion
-2. **Restored.csv**: Decompress the logic relationship back from the compressed dataset
+1. **FilteredOutput.csv**: Dataset after applying LLM-conditional compression
+2. **Restored.csv**: Dataset with logical relationships restored from the compressed version
 
 ## Citation
 
