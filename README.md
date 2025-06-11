@@ -66,7 +66,6 @@ def get_api_key(model_name):
 
 2. **Set up your API key**:
    - Replace `'your_deepseek_api_key_here'` with your actual DeepSeek API key in `config.py`
-   - Add column descriptions for your datasets
 
 ### Dataset Preparation
 **`config.py` file**:
