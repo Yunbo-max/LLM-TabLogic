@@ -135,6 +135,18 @@ The tool generates the following outputs in `results/{dataset_name}/`:
 1. **FilteredOutput.csv**: Dataset after applying LLM-conditional Compressiion
 2. **Restored.csv**: Decompress the logic relationship back from the compressed dataset
 
+## Citation
+
+If you use this code in your research, please cite our paper:
+
+```bibtex
+@article{long2025llm,
+  title={LLM-TabFlow: Synthetic Tabular Data Generation with Inter-column Logical Relationship Preservation},
+  author={Long, Yunbo and Xu, Liming and Brintrup, Alexandra},
+  journal={arXiv preprint arXiv:2503.02161},
+  year={2025}
+}
+```
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
