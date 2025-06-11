@@ -64,8 +64,8 @@ data-column-analysis/
 
 ### API Key Setup
 
-1. **Create a `config.py` file** with your API configuration:
-
+1. **Set up your API key**: 
+**`config.py` file**:
 ```python
 def get_api_key(model_name):
     """Return API key for the specified model"""
@@ -74,7 +74,15 @@ def get_api_key(model_name):
         # Add other models as needed
     }
     return api_keys.get(model_name)
+```
 
+2. **Set up your API key**:
+   - Replace `'your_deepseek_api_key_here'` with your actual DeepSeek API key in `config.py`
+   - Add column descriptions for your datasets
+
+### Dataset Preparation
+**`config.py` file**:
+```python
 def get_column_descriptions(dataset_name):
     """Return column descriptions for the specified dataset"""
     descriptions = {
@@ -86,13 +94,6 @@ def get_column_descriptions(dataset_name):
     }
     return descriptions.get(dataset_name, {})
 ```
-
-2. **Set up your API key**:
-   - Replace `'your_deepseek_api_key_here'` with your actual DeepSeek API key
-   - Add column descriptions for your datasets
-
-### Dataset Preparation
-
 1. Place your CSV files in the project directory
 2. Name them as `{dataset_name}.csv` (e.g., `icustays.csv`)
 3. Add corresponding column descriptions in `config.py`
@@ -101,9 +102,9 @@ def get_column_descriptions(dataset_name):
 
 This implementation has been tested on datasets across finance, healthcare, and logistics domains:
 
-- **Healthcare**: [MIMIC-III](https://mimic.mit.edu/) - Critical care database
-- **Finance**: [UCI Adult Dataset](https://archive.ics.uci.edu/ml/datasets/adult) - Census income data
-- **Logistics**: [Supply Chain Dataset](https://data.mendeley.com/datasets/8gx2fvg2k6/3) - Supply chain management data
+- **Healthcare**: [MIMIC-III](https://mimic.mit.edu/)
+- **Population**: [UCI Adult Income Dataset](https://archive.ics.uci.edu/ml/datasets/adult)
+- **Logistics**: [Dataco Dataset](https://data.mendeley.com/datasets/8gx2fvg2k6/3)
 
 ## Usage
 
