@@ -1,8 +1,13 @@
-# LLM-TabGEO
+# LLM-TabFlow: Synthetic Tabular Data Generation
 
-# Data Column Analysis Tool
+Official implementation of **LLM-TabFlow: Synthetic Tabular Data Generation with Inter-column Logical Relationship Preservation**.
 
-A Python tool for automated hierarchical, mathematical, and temporal analysis of dataset columns using AI-powered insights. This tool analyzes CSV datasets, applies intelligent column filtering, and provides comprehensive data transformations.
+📄 **Paper**: [LLM-TabFlow: Synthetic Tabular Data Generation with Inter-column Logical Relationship Preservation](https://arxiv.org/abs/2503.02161)
+
+🚀 **Coming Soon**: Our new paper **"LLM-TabGEO: Prompt-Guided Geometric Diffusion for Logic-Preserving Tabular Data Generation"** will be available soon!
+
+This tool provides automated hierarchical, mathematical, and temporal analysis of dataset columns using prompt-based reasoning with Large language Models for capturing the logical relationship among tabular columns.
+
 
 ## Installation
 
