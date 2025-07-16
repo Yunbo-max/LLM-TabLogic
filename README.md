@@ -1,5 +1,4 @@
-# LLM-TabFlow
-## Logic Preservation in Tabular Data Generation
+# LLM-TabFlow: Logic Preservation in Tabular Data Generation
 
 Official implementation of **LLM-TabFlow: Synthetic Tabular Data Generation with Inter-column Logical Relationship Preservation**.
 
