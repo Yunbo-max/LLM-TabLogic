@@ -2,7 +2,9 @@
 
 Official implementation of **LLM-TabFlow: Synthetic Tabular Data Generation with Inter-column Logical Relationship Preservation**.
 
-📄 **Paper**: [LLM-TabFlow: Synthetic Tabular Data Generation with Inter-column Logical Relationship Preservation](https://arxiv.org/abs/2503.02161)
+📄 **Paper**: [LLM-TabFlow: Synthetic Tabular Data Generation with Inter-column Logical Relationship Preservation](https://arxiv.org/abs/2503.02161) [![arXiv](https://img.shields.io/badge/arXiv-2503.02161-b31b1b.svg)](https://arxiv.org/abs/2503.02161)
+
+
 
 🚀 **Coming Soon**: Our new paper **"LLM-TabGEO: Prompt-Guided Geometric Diffusion for Logic-Preserving Tabular Data Generation"** will be available soon!
 
