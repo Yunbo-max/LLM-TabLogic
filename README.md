@@ -1,14 +1,8 @@
-# LLM-TabFlow: Logic Preservation in Tabular Data Generation
+# LLM-TabLogic
 
-Official implementation of **LLM-TabFlow: Synthetic Tabular Data Generation with Inter-column Logical Relationship Preservation**.
+Official implementation of **LLM-TabLogic: Preserving Inter-Column Logical Relationships in Synthetic Tabular Data via Prompt-Guided Latent Diffusion**.
 
 [![arXiv](https://img.shields.io/badge/arXiv-2503.02161-b31b1b.svg)](https://arxiv.org/abs/2503.02161)
-
-
-
-🚀 **Coming Soon**: Our new paper **"LLM-TabGEO: Prompt-Guided Geometric Diffusion for Logic-Preserving Tabular Data Generation"** will be available soon!
-
-This tool provides automated hierarchical, mathematical, and temporal analysis of dataset columns using prompt-based reasoning with Large language Models for capturing the logical relationship among tabular columns.
 
 
 ## Installation
