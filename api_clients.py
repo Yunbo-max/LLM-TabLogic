@@ -3,6 +3,47 @@ import json
 import openai
 from typing import Dict, List, Union
 
+import ast
+import re
+from typing import Union, Dict, List, Optional
+
+def extract_python_structure(content: str) -> Optional[Union[Dict, List]]:
+    """
+    Extract Python dictionary or list from a string response that may contain mixed content.
+    
+    Args:
+        content: String response that may contain a Python structure
+        
+    Returns:
+        Extracted Python dict/list or None if no valid structure found
+    """
+    # First try to find complete code blocks
+    code_blocks = re.findall(r'```(?:python)?\n(.*?)\n```', content, re.DOTALL)
+    for block in code_blocks:
+        try:
+            parsed = ast.literal_eval(block.strip())
+            if isinstance(parsed, (dict, list)):
+                return parsed
+        except (SyntaxError, ValueError):
+            continue
+    
+    # If no code blocks, look for standalone structures
+    pattern = r'(?P<structure>\{(?:[^{}]|\{(?:[^{}]|\{[^{}]*\})*\})*\}|\[(?:[^\[\]]|\[(?:[^\[\]]|\[[^\[\]]*\])*\])*\])'
+    matches = re.finditer(pattern, content)
+    
+    for match in matches:
+        try:
+            parsed = ast.literal_eval(match.group('structure'))
+            if isinstance(parsed, (dict, list)):
+                return parsed
+        except (SyntaxError, ValueError):
+            continue
+    
+    return None
+
+
+
+
 def analyze_columns_with_deepseek(api_key: str, column_descriptions: str, args) -> Dict[str, Union[Dict, List]]:
     if args.model == 'gpt':
         client = openai.OpenAI(api_key=api_key)
@@ -200,7 +241,7 @@ def _process_gpt_analysis(client, prompts_gpt, args):
     return results
 
 def _process_deepseek_analysis(api_key, prompts, args):
-    from utils import extract_python_structure
+
     
     results = {}
     
