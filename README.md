@@ -10,13 +10,11 @@ Official implementation of **LLM-TabLogic: Preserving Inter-Column Logical Relat
 ### Prerequisites
 
 - Python 3.10+
-- pip package manager
-
+- 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/LLM-TabGEO.git
-cd LLM-TabGEO
+git clone https://github.com/Yunbo-max/LLM-TabLogic.git
 ```
 
 ### Install Dependencies
@@ -28,7 +26,7 @@ pip install -r requirements.txt
 ## Project Structure
 
 ```
-data-column-analysis/
+LLM-TabLogic/
 ├── main.py                 # Main execution script
 ├── config.py              # Configuration and API key management
 ├── api_clients.py         # API client implementations
@@ -60,7 +58,6 @@ def get_api_key(model_name):
     return api_keys.get(model_name)
 ```
 
-2. **Set up your API key**:
    - Replace `'your_deepseek_api_key_here'` with your actual DeepSeek API key in `config.py`
 
 ### Dataset Preparation
@@ -83,7 +80,7 @@ def get_column_descriptions(dataset_name):
 
 ### Supported Datasets
 
-This implementation has been tested on datasets across finance, healthcare, and logistics domains:
+This implementation has set up several benchmark datasets as follows(in the config.py file):
 
 - **Healthcare**: [MIMIC-III](https://mimic.mit.edu/)
 - **Population**: [UCI Adult Income Dataset](https://archive.ics.uci.edu/ml/datasets/adult)
@@ -100,7 +97,7 @@ python main.py --data icustays
 ### Advanced Usage with Custom Parameters
 
 ```bash
-python main.py --data icustays --model deepseek --temp 0.2 --max_tok 1500
+python main.py --data icustays --model deepseek --temp 0.1 --max_tok 1500
 ```
 
 ### Command Line Arguments
