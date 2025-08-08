@@ -10,7 +10,7 @@ Official implementation of **LLM-TabLogic: Preserving Inter-Column Logical Relat
 ### Prerequisites
 
 - Python 3.10+
-- 
+
 ### Clone the Repository
 
 ```bash
